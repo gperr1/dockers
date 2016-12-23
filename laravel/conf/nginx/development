@@ -4,7 +4,9 @@
 server {
         client_max_body_size 500M;
         listen   80 default_server;
-
+	
+	sendfile off;
+	
         root /share/public/;
         index index.php index.html index.htm;
 
